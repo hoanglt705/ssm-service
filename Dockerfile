@@ -123,4 +123,7 @@ RUN set -e \
 	fi
 
 EXPOSE 8080
+
+cp ./Jenkinfile $CATALINA_HOME/logs
+
 CMD ["catalina.sh", "run"]
